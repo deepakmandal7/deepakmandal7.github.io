@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px lightgray;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.Login-btn {
+    background-color: #007bff;
+    color: azure;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.Login-btn:hover {
+    box-shadow: 2px 2px 30px rgb(169, 94, 239), inset 2px 2px 20px rgb(99, 99, 220);
+    background-color: white;
+    color: black;
+    transition: 0.4s ease-in-out;
+
+}
+
+.form-para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.titleh1 {
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(244, 48, 244), rgb(80, 80, 242));
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.Main-container {
+    width: 55%;
+    height: 100vh;
+    background-color: rgb(174, 164, 164);
+    margin: 30px auto;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+
+}
+
+input .input-form-group {
+    width: 70%;
+    height: 30px;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(227, 239, 227);
+    box-shadow: 2px 2px 15px gray, inset 2px 2px 26px gray;
+}
+
+.Publish {
+    background-image: linear-gradient(45deg, rgb(20, 233, 20), rgb(23, 5, 221));
+    width: 80%;
+    color: white;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px auto;
+}
+
+.cancel-btn {
+    gap: 10px;
+    background-color: red;
+    width: 80%;
+    font-size: 10px;
+    color: white;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px auto;
+}
+
+/* :hover {
+    box-shadow: 2px 2px 30px rgb(169, 94, 239), inset 2px 2px 20px rgb(99, 99, 220);
+    background-color: white;
+    color: black;
+    transition: 0.4s ease-in-out; */
+
+textarea {
+    width: 80%;
+    background-color: rgb(227, 239, 227);
+    box-shadow: 2px 2px 15px gray, inset 2px 2px 26px gray;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+/* style for blog-detail.html */
+
+
+
+
+
+
+
+.blog-detail-title {
+    background-color: #000025;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.blog-detail-title h1 {
+    font-size: 40px;
+}
+
+.blog-metadata {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.author,
+.reading-time,
+.published-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.blog-description {
+    margin: 30px auto;
+    width: 60%;
+
+    p {
+        text-align: justify;
+    }
+}
+
+img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}

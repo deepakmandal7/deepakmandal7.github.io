@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px lightgray;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.Login-btn,
+.readmore {
+    background-color: #007bff;
+    color: azure;
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.Login-btn:hover {
+    box-shadow: 2px 2px 30px rgb(169, 94, 239), inset 2px 2px 20px rgb(99, 99, 220);
+    background-color: white;
+    color: black;
+    transition: 0.4s ease-in-out;
+
+}
+
+.hero {
+    text-align: center;
+
+}
+
+.create-btn {
+    background-color: rgb(54, 179, 54);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: auto;
+
+}
+
+.hero button:hover {
+    background-color: cyan;
+    box-shadow: 2px 2px 30px cyan;
+    color: black;
+    font-weight: 900;
+
+}
+
+.card-container {
+
+    width: 80%;
+    height: 100vh;
+    margin: 10 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    width: 28%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px lightgray;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #033;
+    color: white;
+    margin: 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section a {
+    color: rgb(215, 213, 213);
+    text-decoration: none;
+
+}
+
+.footer-button {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+
+
+
+

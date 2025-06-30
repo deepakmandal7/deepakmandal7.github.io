@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.blog-banner {
+  height: 50vh;
+  width: 100vw;
+  background-image: url("https://media.istockphoto.com/id/939108474/photo/a-group-of-graduates-celebrating.jpg?s=1024x1024&w=is&k=20&c=1Kho_7K08kiOHx6UtfOVr_7sMNdi5WR1SacR5iuCjEE=");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.428);
+    position: absolute;
+  }
+
+  h1,
+  p {
+    color: white;
+    z-index: 1;
+    text-shadow: 1px 2px 4px #000000bf;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+main {
+  background-color: rgb(247, 245, 245);
+}
+.artical-and-news {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    padding: 20px;
+    font-size: 40px;
+    p {
+      color: gray;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.button {
+  background: linear-gradient(45deg, lightgreen, rgb(93, 247, 247));
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+.cards {
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  .card {
+    min-height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    .date-and-person {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      padding: 16px;
+      border-bottom: 2px solid lightgray;
+      p {
+        color: grey;
+        background-color: rgb(247, 245, 245);
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        padding: 4px;
+      }
+      h5 {
+        color: rgb(110, 110, 247);
+        font-weight: 300;
+        font-size: 14px;
+      }
+    }
+    img {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      width: 100%;
+      height: 250px;
+    }
+  }
+  .discription {
+    margin: 20px;
+    text-align: left;
+    p {
+      color: rgb(135, 134, 134);
+      text-align: left;
+    }
+    .readmore {
+      background: linear-gradient(45deg, rgb(164, 105, 247), rgb(11, 3, 250));
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-weight: 600;
+      font-size: 17px;
+      color: white;
+      margin: 20px 0px;
+    }
+  }
+}
+.touch {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  .detail {
+    padding-top: 100px;
+    h1 {
+      font-size: 35px;
+      color: white;
+    }
+    p {
+      color: white;
+      margin: 20px;
+    }
+    button {
+      background: white;
+      color: blue;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.about-banner {
+  height: 50vh;
+  width: 100vw;
+  background-image: url("https://plus.unsplash.com/premium_photo-1679953769421-0ba7afd1c73a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.428);
+    position: absolute;
+  }
+
+  h1,
+  p {
+    color: white;
+    z-index: 1;
+    text-shadow: 1px 2px 4px #000000bf;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+.vision-section {
+  height: 70vh;
+  display: flex;
+  gap: 70px;
+  padding: 80px;
+
+  .vision,
+  .mission {
+    text-align: center;
+    box-shadow: 0 3px 13px 1px #8dcfbc85;
+  }
+  h3 {
+    margin: 20px 0;
+    font-size: 25px;
+    color: #3498db;
+  }
+  p {
+    color: #2c3e50;
+  }
+  .icon {
+    font-size: 45px;
+  }
+}
+.principal-message {
+  display: flex;
+  gap: 50px;
+  padding: 80px;
+}
+.principal-card {
+  border-radius: 10px;
+  img {
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .principal-info {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    p {
+      margin-top: 15px;
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+.school-values {
+  min-height: 100vh;
+  background-color: white;
+  padding: 50px 40px;
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #3498db;
+    text-align: center;
+  }
+  .school-values-paragraph {
+    background-color: #3498db;
+    height: 20vh;
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      padding: 20px 10px;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+.school-values-container {
+  display: flex;
+  gap: 30px;
+  padding: 30px 10%;
+  .card {
+    height: 400px;
+    width: 350px;
+    background-color: rgb(232, 229, 229);
+    box-shadow: 0px 10px 25px rgb(174, 172, 172);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+
+    p {
+      color: #2f2d2d;
+      text-align: justify;
+      padding: 0 32px 32px 32px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    .icon {
+      font-size: 40px;
+    }
+  }
+}
+
+.school-journey {
+  min-width: 100vh;
+  background-color: #f8f9fa;
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: #3498db;
+    padding: 80px 0;
+  }
+}
+.timeline {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 80px 0;
+}
+.timeline-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.timeline-card {
+  position: absolute;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px #0000000d;
+
+  h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+    font-size: 20px;
+  }
+  p {
+    color: #2c3e50;
+  }
+}
+.timeline-date p {
+  font-size: 20px;
+  color: white;
+  background-color: #3498db;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0px 4px 10px #0000001a;
+  padding: 10px 25px;
+
+  margin-bottom: 100px;
+}
+.left-card {
+  right: 500px;
+  text-align: right;
+}
+.right-card {
+  left: 500px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 80%;
+  background-color: #3498db;
+}
+.fa-book {
+  position: absolute;
+  right: 900px;
+  padding: 25px;
+  color: white;
+  background-color: rgb(224, 23, 23);
+  border: 6px solid white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 30px orange;
+}
+.fa-book:hover {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1.5);
+  box-shadow: 2px 2px 30px red;
+  background-color: orange;
+  color: rgb(7, 215, 252);
+  border: 2px dotted;
+}

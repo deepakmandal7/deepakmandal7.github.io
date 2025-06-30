@@ -1,0 +1,145 @@
+.notice-banner {
+  height: 50vh;
+  width: 100vw;
+  background-image: url("https://media.istockphoto.com/id/2143485193/photo/3d-render-of-digital-background-with-different-online-services-demonstration-of-messenger.jpg?s=612x612&w=0&k=20&c=ITGTDS_RERuXQ1P3brvgiIcgmko7wG6udHQROVHSDOc=");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.428);
+    position: absolute;
+  }
+
+  h1,
+  p {
+    color: white;
+    z-index: 1;
+    text-shadow: 1px 2px 4px #000000bf;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.notice-categories button {
+  font-weight: 600;
+  outline: none;
+  border: none;
+  color: #212529;
+  border-radius: 25px;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 8px 0px #1c1a1a33;
+  background-color: white;
+}
+.notice-categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px;
+}
+.notice-cards .card {
+  display: flex;
+  box-shadow: 4px 4px 8px rgb(182, 199, 255);
+  border-radius: 20px;
+  margin-bottom: 35px;
+  transition: all 0.8 cubic-bezier(0.19, 1, 0.22, 1);
+}
+.notice-cards .card:hover {
+  box-shadow: 4px 4px 18px rgb(160, 224, 250);
+  transform: scale(1.05);
+}
+.notice-date {
+  color: white;
+  background-color: rgb(90, 90, 249);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.notice-content {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  button {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: blue;
+    background-color: #acacf1cc;
+    align-self: flex-start;
+  }
+  h1 {
+    font-size: 20px;
+    /* color: rgb(90, 90, 249); */
+    color: #2c3e50;
+  }
+  p {
+    font-size: 15px;
+    color: rgba(166, 164, 164, 0.928);
+  }
+  a {
+    font-size: 15px;
+    text-decoration: none;
+    color: blue;
+  }
+}
+.notice-categories {
+  margin-top: 50px;
+}
+.notice-cards {
+  padding: 50px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  .first {
+    background-color: blue;
+    color: white;
+    height: 20px;
+    width: 20px;
+    font-weight: 900;
+    /* font-size: 20px; */
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+  }
+  .next {
+    width: 55px;
+    height: 35px;
+    width: 70px;
+    background-color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 20px;
+    border-radius: 30px;
+    color: black;
+    padding: 2px;
+    .img {
+      color: white;
+      size: 24px;
+    }
+  }
+}

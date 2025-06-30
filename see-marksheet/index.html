@@ -1,0 +1,289 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h3>Certificate Generator</h3>
+
+      <input type="text" name="" id="studentName" placeholder="Student Name" />
+      <input type="text" name="" id="symbolNo" placeholder="Symbol Number" />
+      <input type="date" name="" id="dob" placeholder="Date of birth" />
+      <input type="text" name="" id="school" placeholder="School Name" />
+
+      <h3>Subject marks (out of 100)</h3>
+
+      <input
+        type="number"
+        name=""
+        id="english"
+        placeholder="English"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="nepali"
+        placeholder="Nepali"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="science"
+        placeholder="Science"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="math"
+        placeholder="Math."
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="optmath"
+        placeholder="Opt. Math."
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="cpp"
+        placeholder="C++"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="microprocessor"
+        placeholder="Microprocessor"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="hardware"
+        placeholder="Computer Hardware"
+        max="100"
+        min="0"
+      />
+      <input
+        type="number"
+        name=""
+        id="dbms"
+        placeholder="DBMS"
+        max="100"
+        min="0"
+      />
+
+      <button onclick="generateCertificate()">Generate Certificate</button>
+    </div>
+
+    <div class="marksheet-container">
+      <div class="header">
+        <div class="logo">
+          <img
+            src="https://www.newsharpal.in/wp-content/uploads/2020/06/nepal.png"
+            alt="logo"
+          />
+        </div>
+        <div class="header-title">
+          <h3>GOVERNMENT OF NEPAL</h3>
+          <h4>MINISTRY OF EDUCATION</h4>
+          <h3>OFFICE OF THE CONTROLLER OF EXAMINATIONS</h3>
+          <h4>SECONDARY EDUCATION EXAMINATION</h4>
+        </div>
+      </div>
+      <hr />
+
+      <div>
+        <p><b> THE MARKS SECURED BY </b> <span class="certName"></span></p>
+        <p><b>DATE OF BIRTH:</b> <span class="certDob"></span></p>
+        <br />
+
+        <p><b>SYMBOL NO:</b> <span class="certSymbolNo"></span></p>
+        <p>OF <span class="certSchoolName"></span></p>
+        <br />
+
+        <p>(2009 AD) IN THE ANNUAL SEE EXAMINATION</p>
+      </div>
+
+      <table border="1" cellpadding="5">
+        <thead>
+          <tr>
+            <th>SERIAL NUMBER</th>
+            <th>SUBJECTS</th>
+            <th>FULL MARKS</th>
+            <th>PASS MARKS</th>
+            <th colspan="2">OBTAINED MARKS</th>
+            <th>TOTAL</th>
+            <th>GRADE</th>
+            <th>REMARKS</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>TH</th>
+            <th>PR</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>COMP. ENGLISH</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certEngTh"></td>
+            <td id="certEngPr"></td>
+            <td id="certEngTotal"></td>
+            <td id="certEngGrade"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>COMP. NEPALI</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certNepTh"></td>
+            <td id="certNepPr"></td>
+            <td id="certNepTotal"></td>
+            <td id="certNepGrade"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>COMP. SCIENCE</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certSciTh"></td>
+            <td id="certSciPr"></td>
+            <td id="certSciTotal"></td>
+            <td id="certSciGrade"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>COMP. MATHS</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certMathTh"></td>
+            <td id="certMathPr"></td>
+            <td id="certMathTotal"></td>
+            <td id="certMathGrade"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>OPT. MATHS</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certOptMathTh"></td>
+            <td id="certOptMathPr"></td>
+            <td id="certOptMathTotal"></td>
+            <td id="certOptMathGrade"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>06</td>
+            <td>C++</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certCppTh"></td>
+            <td id="certCppPr"></td>
+            <td id="certCppTotal"></td>
+            <td id="certCppGrade"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>07</td>
+            <td>MICROPROCESSOR</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certMicroTh"></td>
+            <td id="certMicroPr"></td>
+            <td id="certMicroTotal"></td>
+            <td id="certMicroGrade"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>08</td>
+            <td>COMP. HARDWARE</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certHardwareTh"></td>
+            <td id="certHardwarePr"></td>
+            <td id="certHardwareTotal"></td>
+            <td id="certHardwareGrade"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>09</td>
+            <td>DBMS</td>
+            <td>100</td>
+            <td>32</td>
+            <td id="certDbmsTh"></td>
+            <td id="certDbmsPr"></td>
+            <td id="certDbmsTotal"></td>
+            <td id="certDbmsGrade"></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td colspan="6">Full Marks</td>
+            <td>800</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td colspan="6">Grand Total</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td colspan="6">Results</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="marksheet-footer">
+        <div>
+          <p>CHECKED BY: SANOTHIMI, BHAKTAPUR, NEPAL</p>
+          <p>DATE OF ISSUE:</p>
+        </div>
+
+        <p>CONTROLLER</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

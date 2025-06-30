@@ -1,0 +1,268 @@
+.admission-banner {
+  height: 50vh;
+  width: 100vw;
+  background-image: url("https://media.istockphoto.com/id/1160180595/photo/indian-university-student-stock-images.jpg?s=1024x1024&w=is&k=20&c=LagZHEdTnHj9hZpJd8qPf3q1BDklwUJTsE3d-EtAv8M=");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.428);
+    position: absolute;
+  }
+
+  h1,
+  p {
+    color: white;
+    z-index: 1;
+    text-shadow: 1px 2px 4px #000000bf;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    color: white !important;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #28a745 0%, #20c0c9 100%);
+    z-index: 1;
+    border-radius: 60px;
+    margin: 10px;
+  }
+}
+.quick-info {
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px;
+    border-bottom: 10px solid rgb(0, 8, 255);
+  }
+  .card-container {
+    display: flex;
+    padding: 50px;
+    background-color: #f8f9fa;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 4px 4px 6px #00000026;
+    border-radius: 30px;
+    padding: 30px;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    h3 {
+      color: black;
+    }
+  }
+  i {
+    background: linear-gradient(45deg, rgb(79, 93, 252), rgb(241, 50, 247));
+    align-content: center;
+    height: 80px;
+    width: 80px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+  .card:hover {
+    transform: scale(1.08);
+    box-shadow: 4px 4px 30px #03c5f026;
+  }
+}
+.admission-requirement {
+  padding: 50px;
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .card-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    .card {
+      padding: 40px;
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      border-left: 5px solid #3498cb;
+    }
+    .card-title {
+      font-size: 24px;
+      display: flex;
+      align-items: #3498cb;
+      margin-bottom: 20px;
+      gap: 15px;
+    }
+    .card-content {
+      color: #495057;
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.application-form {
+  padding: 80px;
+}
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px #0000001a;
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #212529;
+  }
+}
+.form-section {
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 5px solid blue;
+  background-color: white;
+  margin-bottom: 30px;
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: blue;
+  }
+}
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  margin-bottom: 30px;
+  label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #212529;
+  }
+  input,
+  select,
+  textarea {
+    /* background-color: red; */
+    padding: 1rem;
+    border: 2px solid #efefef;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    box-shadow: 2px 2px 10px rgb(241, 241, 241), inset 6px 6px 15px lightgray;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid blueviolet;
+  }
+}
+.upload {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  padding: 40px;
+
+  p {
+    font-size: 40px;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  span {
+    font-size: 15px;
+    color: #efefef;
+  }
+  .upload:hover {
+    border: 2px solid greenyellow;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    button {
+      border: none;
+      color: white;
+      font-weight: 900;
+      border-radius: 30px;
+      padding: 18px;
+    }
+    .submit-button {
+      background: linear-gradient(135deg, rgb(213, 199, 248), blue);
+    }
+    .reset-button {
+      background: linear-gradient(135deg, black, white);
+    }
+  }
+}
+.application-process {
+  background-color: lightgray;
+  height: 90vh;
+  padding: 30px;
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px;
+  }
+
+  .application {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .Form-application {
+    i {
+      background: linear-gradient(45deg, rgb(79, 93, 252), rgb(241, 50, 247));
+      align-content: center;
+      height: 80px;
+      width: 80px;
+      color: white;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 4px 4px 6px #00000026;
+    border-radius: 30px;
+    padding: 30px;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
